@@ -1,8 +1,8 @@
 from rest_framework import status, permissions, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from authsystem.models import User, UserDetails
-from authsystem.serializers import UserSerializer, UserDetailsSerializer, UserLoginSerializer, MyTokenObtainPairSerializer
+from auth.models import User, UserDetails
+from auth.serializers import UserSerializer, UserDetailsSerializer, UserLoginSerializer, MyTokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from django.contrib.auth import get_user_model
 from rest_framework.permissions import IsAuthenticated
