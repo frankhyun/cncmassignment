@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('auth', '0012_alter_user_first_name_max_length'),
-        ('authsystem', '0002_alter_user_phone'),
+        ('auth', '0002_alter_user_phone'),
     ]
 
     operations = [
@@ -95,6 +95,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='userdetails',
             name='user',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='details', to='authsystem.user'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='details', to='auth.user'),
         ),
     ]

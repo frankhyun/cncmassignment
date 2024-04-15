@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
                 ('profession', models.CharField(max_length=240)),
                 ('address', models.CharField(max_length=240)),
                 ('hobby', models.CharField(max_length=240)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='authsystem.user')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='auth.user')),
             ],
         ),
     ]
